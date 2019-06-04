@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CARLOS
+ * @author jalvarezotero
  */
 public class frmservicios extends javax.swing.JInternalFrame {
 
