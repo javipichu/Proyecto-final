@@ -80,10 +80,10 @@ public class frminicio extends javax.swing.JFrame {
         lblnombre.setText("Nombre");
 
         lblapaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblapaterno.setText("pApellido");
+        lblapaterno.setText("ApellidoP");
 
         lblamaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblamaterno.setText("mApellido");
+        lblamaterno.setText("ApellidoM");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("DATOS");
@@ -276,13 +276,13 @@ public class frminicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 1193, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 801, Short.MAX_VALUE)
         );
 
         pack();
@@ -353,7 +353,6 @@ public class frminicio extends javax.swing.JFrame {
     private void mnuherramientasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuherramientasActionPerformed
 
     }//GEN-LAST:event_mnuherramientasActionPerformed
-
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
     JOptionPane.showMessageDialog(null,"En mantenimiento, disculpe las molestias.");
     }//GEN-LAST:event_jMenuItem5ActionPerformed

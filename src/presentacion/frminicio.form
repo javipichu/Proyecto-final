@@ -237,15 +237,15 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="escritorio" alignment="0" pref="830" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="escritorio" pref="1193" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="escritorio" pref="650" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="escritorio" alignment="0" pref="801" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -376,7 +376,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="13" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="pApellido"/>
+                <Property name="text" type="java.lang.String" value="ApellidoP"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -387,7 +387,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="13" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="mApellido"/>
+                <Property name="text" type="java.lang.String" value="ApellidoM"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>

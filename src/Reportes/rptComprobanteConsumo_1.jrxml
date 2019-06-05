@@ -96,14 +96,14 @@ where pago.`idpago`=$P{idpago}
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ca. José Gálvez 1368]]></text>
+				<text><![CDATA[Ca. Javi alvarez 1368]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="140" y="74" width="300" height="20" uuid="d885d2db-c654-4066-9ce5-c276c580412d"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Teléfono: 979026684  www.hotelparaiso.info]]></text>
+				<text><![CDATA[Teléfono: 986469263  www.hotelparaiso.info]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="581" y="11" width="203" height="43" forecolor="#3300FF" uuid="37268098-f609-49bb-a56e-c94aa6ad55f0"/>
