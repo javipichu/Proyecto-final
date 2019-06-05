@@ -223,6 +223,7 @@ public class frminicio extends javax.swing.JFrame {
             }
         });
 
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_J, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem5.setText("Ajustes");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

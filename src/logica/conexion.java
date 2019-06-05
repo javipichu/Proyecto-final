@@ -32,9 +32,10 @@ public class conexion {
         try {
             Class.forName("org.gjt.mm.mysql.Driver");
             link=DriverManager.getConnection(this.url, this.user, this.pass);
+         
             
         } catch (ClassNotFoundException | SQLException e) {
-            JOptionPane.showConfirmDialog(null, e);
+            JOptionPane.showConfirmDialog(null, "Conexion perdida, algo falla");
             
         }
         
