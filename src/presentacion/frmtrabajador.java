@@ -9,7 +9,7 @@ package Presentacion;
 import Datos.vcliente;
 import Datos.vtrabajador;
 import Logica.fcliente;
-import Logica.fservicios;
+import Logica.fproducto;
 import Logica.ftrabajador;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;

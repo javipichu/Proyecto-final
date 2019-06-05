@@ -8,7 +8,7 @@ package Presentacion;
 
 import Datos.vproducto;
 import Logica.fhabitacion;
-import Logica.fservicios;
+import Logica.fproducto;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -16,10 +16,10 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author jalvarezotero
  */
-public class frmservicios extends javax.swing.JInternalFrame {
+public class frmproductos extends javax.swing.JInternalFrame {
 
     
-    public frmservicios() {
+    public frmproductos() {
         initComponents();
         mostrar("");
         inhabilitar();
@@ -77,7 +77,7 @@ public class frmservicios extends javax.swing.JInternalFrame {
     void mostrar(String buscar) {
         try {
             DefaultTableModel modelo;
-            fservicios func = new fservicios();
+            fproducto func = new fproducto();
             modelo = func.mostrar(buscar);
 
             tablalistado.setModel(modelo);
@@ -135,7 +135,7 @@ public class frmservicios extends javax.swing.JInternalFrame {
         setMaximizable(true);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Servicios");
+        jLabel1.setText("Productos");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 153));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Listado de Productos"));
@@ -311,9 +311,9 @@ public class frmservicios extends javax.swing.JInternalFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel4))
-                                .addGap(65, 65, 65)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtnombre))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -429,7 +429,7 @@ public class frmservicios extends javax.swing.JInternalFrame {
             int confirmacion = JOptionPane.showConfirmDialog(rootPane, "Estás seguro de Eliminar el Producto?","Confirmar",2);
 
             if (confirmacion==0) {
-                fservicios func = new fservicios ();
+                fproducto func = new fproducto ();
                 vproducto dts= new vproducto();
 
                 dts.setIdproducto(Integer.parseInt(txtidproducto.getText()));
@@ -492,7 +492,7 @@ public class frmservicios extends javax.swing.JInternalFrame {
       
 
         vproducto dts = new vproducto();
-        fservicios func = new fservicios();
+        fproducto func = new fproducto();
 
         dts.setNombre(txtnombre.getText());
 
@@ -551,21 +551,27 @@ public class frmservicios extends javax.swing.JInternalFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmservicios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmproductos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmservicios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmproductos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmservicios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmproductos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmservicios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmproductos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmservicios().setVisible(true);
+                new frmproductos().setVisible(true);
             }
         });
     }

@@ -8,7 +8,7 @@ package Presentacion;
 
 import Datos.vconsumo;
 import Logica.fconsumo;
-import Logica.fservicios;
+import Logica.fproducto;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 

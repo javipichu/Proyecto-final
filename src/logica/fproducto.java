@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author jalvarezotero
  */
-public class fservicios {
+public class fproducto {
     
    private conexion mysql=new conexion();
    private Connection cn=mysql.conectar();

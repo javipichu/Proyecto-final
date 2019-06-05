@@ -9,7 +9,7 @@ package Presentacion;
 import Datos.vhabitacion;
 import Datos.vreserva;
 import Logica.fhabitacion;
-import Logica.fservicios;
+import Logica.fproducto;
 import Logica.freserva;
 import java.sql.Date;
 import java.util.Calendar;

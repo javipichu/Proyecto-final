@@ -13,7 +13,7 @@ import Logica.conexion;
 import Logica.fconsumo;
 import Logica.fhabitacion;
 import Logica.fpago;
-import Logica.fservicios;
+import Logica.fproducto;
 import Logica.freserva;
 import java.io.File;
 import java.sql.Connection;
@@ -23,6 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -806,7 +807,6 @@ public class frmPago extends javax.swing.JInternalFrame {
                 view.setVisible(true);
 
             } catch (Exception e) {
-                e.printStackTrace();
             }
         }
     }//GEN-LAST:event_btnImprimirComprobanteActionPerformed
@@ -826,7 +826,7 @@ public class frmPago extends javax.swing.JInternalFrame {
                 view.setTitle("Comprobante");
                 view.setVisible(true);
 
-            } catch (Exception e) {
+            } catch (JRException e) {
                 e.printStackTrace();
             }
         }

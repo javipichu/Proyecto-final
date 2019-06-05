@@ -33,11 +33,14 @@ public class frminicio extends javax.swing.JFrame {
     private void initComponents() {
 
         escritorio = new javax.swing.JDesktopPane();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblacceso = new javax.swing.JLabel();
         lblidpersona = new javax.swing.JLabel();
         lblnombre = new javax.swing.JLabel();
         lblapaterno = new javax.swing.JLabel();
         lblamaterno = new javax.swing.JLabel();
-        lblacceso = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         mnusisreserva = new javax.swing.JMenu();
         mnuarchivo = new javax.swing.JMenu();
@@ -51,6 +54,7 @@ public class frminicio extends javax.swing.JFrame {
         mnuconfiguraciones = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         mnuherramientas = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
         mnuayuda = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -60,34 +64,75 @@ public class frminicio extends javax.swing.JFrame {
 
         escritorio.setBackground(new java.awt.Color(102, 255, 255));
 
-        lblidpersona.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblidpersona.setText("jLabel1");
-        escritorio.add(lblidpersona);
-        lblidpersona.setBounds(20, 10, 130, 16);
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\javiv\\Desktop\\proyecto final\\foto hotel.png")); // NOI18N
+        escritorio.add(jLabel2);
+        jLabel2.setBounds(540, 0, 293, 155);
 
-        lblnombre.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblnombre.setText("jLabel2");
-        escritorio.add(lblnombre);
-        lblnombre.setBounds(20, 40, 130, 16);
-
-        lblapaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblapaterno.setText("jLabel3");
-        escritorio.add(lblapaterno);
-        lblapaterno.setBounds(20, 70, 130, 16);
-
-        lblamaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblamaterno.setText("jLabel4");
-        escritorio.add(lblamaterno);
-        lblamaterno.setBounds(20, 110, 130, 16);
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         lblacceso.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        lblacceso.setText("jLabel7");
-        escritorio.add(lblacceso);
-        lblacceso.setBounds(20, 140, 130, 16);
+        lblacceso.setText("Estado");
+
+        lblidpersona.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblidpersona.setText("Numero");
+
+        lblnombre.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblnombre.setText("Nombre");
+
+        lblapaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblapaterno.setText("pApellido");
+
+        lblamaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblamaterno.setText("mApellido");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setText("DATOS");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblidpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(lblnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblapaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblamaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblnombre)
+                    .addComponent(lblapaterno)
+                    .addComponent(lblamaterno))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblacceso)
+                    .addComponent(lblidpersona))
+                .addGap(26, 26, 26))
+        );
+
+        escritorio.add(jPanel1);
+        jPanel1.setBounds(20, 40, 240, 124);
 
         mnusisreserva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Inicio.png"))); // NOI18N
         mnusisreserva.setMnemonic('f');
-        mnusisreserva.setText("Sisreserva");
+        mnusisreserva.setText("Inicio");
         menuBar.add(mnusisreserva);
 
         mnuarchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Archivo.png"))); // NOI18N
@@ -172,6 +217,20 @@ public class frminicio extends javax.swing.JFrame {
 
         mnuherramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Herramientas.png"))); // NOI18N
         mnuherramientas.setText("Herramientas");
+        mnuherramientas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuherramientasActionPerformed(evt);
+            }
+        });
+
+        jMenuItem5.setText("Ajustes");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        mnuherramientas.add(jMenuItem5);
+
         menuBar.add(mnuherramientas);
 
         mnuayuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Ayuda.png"))); // NOI18N
@@ -217,18 +276,21 @@ public class frminicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 849, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showInputDialog("cualquier duda que tengas acerca del programa...........");
+        JOptionPane.showMessageDialog(null,"HABER ESTUDIADO...XD");       
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
@@ -241,7 +303,7 @@ public class frminicio extends javax.swing.JFrame {
 
     private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
         // TODO add your handling code here:
-        frmservicios form =new frmservicios();
+        frmproductos form =new frmproductos();
         escritorio.add(form);
         form.toFront();
         form.setVisible(true);
@@ -285,9 +347,16 @@ public class frminicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void mnuayudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuayudaActionPerformed
-            JOptionPane.showInputDialog("cualquier duda que tengas acerca del programa...........");
-        JOptionPane.showInputDialog("HABER ESTUDIADO");
+       
     }//GEN-LAST:event_mnuayudaActionPerformed
+
+    private void mnuherramientasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuherramientasActionPerformed
+
+    }//GEN-LAST:event_mnuherramientasActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+    JOptionPane.showMessageDialog(null,"En mantenimiento, disculpe las molestias.");
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -328,10 +397,14 @@ public class frminicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
     public static javax.swing.JDesktopPane escritorio;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JPanel jPanel1;
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblamaterno;
     public static javax.swing.JLabel lblapaterno;

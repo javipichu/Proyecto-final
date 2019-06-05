@@ -6,7 +6,7 @@
 
 package Presentacion;
 
-import Logica.fservicios;
+import Logica.fproducto;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -34,7 +34,7 @@ public class frmvistaproducto extends javax.swing.JFrame {
 void mostrar(String buscar) {
         try {
             DefaultTableModel modelo;
-            fservicios func = new fservicios();
+            fproducto func = new fproducto();
             modelo = func.mostrar(buscar);
 
             tablalistado.setModel(modelo);
